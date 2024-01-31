@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100vh;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Muli", sans-serif;
+}
+
+.container {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.panel {
+  width: 6%;
+  height: 80vh;
+  background-color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: all ease 0.9s;
+  -webkit-transition: all ease 0.9s;
+  -moz-transition: all ease 0.9s;
+  -ms-transition: all ease 0.9s;
+  -o-transition: all ease 0.9s;
+}
+
+.active {
+  position: relative;
+  width: 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  opacity: 0;
+}
+
+.active h1 {
+  opacity: 1;
+  transition: all 0.9s ease-in 0.4s;
+  -webkit-transition: all 0.9s ease-in 0.4s;
+  -moz-transition: all 0.9s ease-in 0.4s;
+  -ms-transition: all 0.9s ease-in 0.4s;
+  -o-transition: all 0.9s ease-in 0.4s;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
