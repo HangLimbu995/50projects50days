@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efedd6;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  max-width: 50%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  overflow-x: hidden;
+}
+
+.box {
+  width: 400px;
+  height: 200px;
+  background-color: #4682b4;
+  margin-top: 20px;
+  box-shadow: 3px 3px 5px #b2b19f;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(400%);
+  -webkit-transform: translateX(400%);
+  -moz-transform: translateX(400%);
+  -ms-transform: translateX(400%);
+  -o-transform: translateX(400%);
+  transition: transform 0.9s ease;
+  -webkit-transition: transform 0.9s ease;
+  -moz-transition: transform 0.9s ease;
+  -ms-transition: transform 0.9s ease;
+  -o-transition: transform 0.9s ease;
+}
+
+.box:nth-child(even) {
+  transform: translateX(-400%);
+  -webkit-transform: translateX(-400%);
+  -moz-transform: translateX(-400%);
+  -ms-transform: translateX(-400%);
+  -o-transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+h2 {
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
